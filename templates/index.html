@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>weibo simulator</title>
+	<link rel="stylesheet" href="/static/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+	<script src="/static/script.js" defer></script>
+</head>
+<body>
+	<div class="container">
+		<div class="title">
+			<h2>People's daily weibo simulator</h3>
+			<h3>Machine Learning 2021 Spring</h3>
+			
+		</div>
+		
+		<div class="count-holder">
+			<div id="wrapper">
+
+				<div id="count">140</div>&nbspleft				
+			</div>
+
+		</div>
+		<input type="checkbox" id="sizeControl">
+
+		<label for="sizeControl">
+			<div class="container weibo" id="blog-container">
+				<div class="row">
+					<textarea id="newBlog" name="new blog" placeholder="input new blog..."
+		          onkeyup="javascript:checkWords(this);" onmousedown="javascript:checkWords(this);"></textarea>					
+				</div>
+				<div class="row">
+					<button id="publish" onclick="publish()">publish</button>
+				</div>
+			</div>					
+		</label>
+
+		<div class="response">
+			<div class="res-col">likes</div>
+			<div class="res-col" id="likes">1000</div>
+			
+			<div class="res-col">comments</div>
+			<div class="res-col" id="comments">32</div>
+			
+			<div class="res-col">forwards</div>
+			<div class="res-col" id="forwards">32</div>
+			
+		</div>
+
+	</div>
+</body>
+</html>
